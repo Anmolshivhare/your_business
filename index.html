@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    </head>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .contact-btn{
+           background-color:  #3993D0;
+           color: #fff;
+           /* padding:13px 51px 13px 51px; */
+           border: 1px;
+           border-radius: 40px;
+           height: 40px;
+           width: 185px;
+        }
+        .bg-img{
+            background-image: url('Group4.png');
+          /* height: 700px; */
+             width: 100%;
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat; 
+        
+        }
+        .nav-link{
+            color: #fff;
+        }
+        .main-heading{
+            font-size: 70px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 70px;
+            text-align: center;
+        }
+        .bus-para{
+            font-size: 70px;
+            font-weight: 700;
+            color: #fff;
+            
+            text-align: center;
+        }
+          .ourservice{
+            background: #F7F8FD;
+          }
+          .testimonial{
+            background-color: #F7F8FD;
+          }
+          .banner_para{
+            margin: 0 auto;
+            width: 60%;
+          }
+          
+            /* slider  */
+           
+ 
+
+            .slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #216efc;
+            }
+            .slick-next:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #216efc;
+            }
+            .slick-dots li button:before {
+     font-size: 13px;
+ }
+    .slick-dots {
+        
+        bottom: -50px;
+        
+    }
+
+
+            @media (max-width: 767.98px) {
+        .rotate-mobile {
+            transform: rotate(90deg);
+        }
+
+        .main-heading{
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 45px;
+            text-align: center;
+        }
+                .bus-para {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+        }
+        .banner_para{
+            padding: 4px 20px;
+            width: 100%;
+            text-align: justify;
+          }
+          /* .contact-btn{
+            margin: 0px 5px;
+          } */
+          .display-5{
+            font-size: 24px;
+          }
+
+    }
+    </style>
+    <body>
+        <section class="bg-img pb-5">
+
+            <nav class="navbar navbar-expand-lg  pt-3 fixed-top bg-danger  ">
+                <div class="container ">
+                    <a class="navbar-brand" href="#">
+
+                        <img src="logo.png" alt width="150px">
+                    </a>
+                    <button class="navbar-toggler bg-white" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0  me-5">
+                            <li class="nav-item  mx-md-4">
+                                <a class="nav-link  " aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-md-4">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another
+                                            action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something
+                                            else here</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item mx-md-4">
+                                <a class="nav-link  ">Service</a>
+                            </li>
+                        </ul>
+                        <button type="button"
+                            class="fw-bolder  contact-btn">Contact
+                            us</button>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div
+                class="d-flex align-items-end justify-content-center pt-5 mt-5">
+                <div>
+
+                    <h1 class="main-heading">Web Design, SEO & <br> Internet
+                        Marketing For </h1>
+                    <p class="bus-para text-primary">Your Business</p>
+
+                    <p
+                        class="banner_para text-md-center text-white py-3 fs-6">Sed
+                        ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo veritatis et quasi
+                        architecto beatae vitae dicta sunt.</p>
+
+                    <div class="d-flex justify-content-center pt-3">
+                        <button type="button"
+                            class="fw-bolder    contact-btn mx-md-4">Free
+                            Consultation</button>
+                        <button type="button"
+                            class="fw-bolder    contact-btn mx-md-4">View
+                            Portfolio</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ourservice">
+            <div class="container py-5 px-md-5">
+
+                <span class="text-primary fs-5 fw-bolder">Our Services</span>
+                <div class="d-flex mt-3 justify-content-between">
+                    <h3 class="fw-bolder display-5   text-dark">What we can
+                        offer
+
+                        today</h3>
+                    <button type="button" class="fw-bolder contact-btn  ">View
+                        All Services</button>
+                </div>
+
+                <div class="row   ptmd-5 ">
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between   ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between   ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between   ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row   pt-md-5 ">
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between   ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between   ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="items mx-md-2 my-3 bg-white rounded-4 p-3">
+                            <div
+                                class="  d-flex justify-content-between ">
+                                <p class="fs-4 fw-bolder">Web
+                                    <br>Development</p>
+                                <img src="Group 7.png" alt width="60"
+                                    height="60">
+                            </div>
+                            <hr class="m-0">
+
+                            <div class="px-2  py-3">
+                                <p>totam rem aperiam, eaque ipsa quae ab illo
+                                    inventore et quasi architecto beatae.</p>
+                                <img src="Rectangle 11.png" alt
+                                    class="rounded-4"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container   px-md-5 ">
+            <div class="row pt-5 mb-5">
+                <div class="col-md-2 col-6 mx-md-3 text-center">
+                    <div class="items m-3 ">
+                        <img src="08.png" alt width="150" height="50">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mx-md-3 text-center">
+                    <div class="items m-3 ">
+                        <img src="08.png" alt width="150" height="50">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mx-md-3 text-center">
+                    <div class="items  m-3">
+                        <img src="08.png" alt width="150" height="50">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mx-md-3 text-center">
+                    <div class="items m-3 ">
+                        <img src="08.png" alt width="150" height="50">
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mx-md-3 text-center">
+                    <div class="items m-3 ">
+                        <img src="08.png" alt width="150" height="50">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-md-5">
+                <span class="text-primary fs-5 fw-bolder">Our Services</span>
+                <div class="d-flex mt-3 justify-content-between">
+                    <h3 class="fw-bolder display-5   text-dark">Explore the
+                        latest
+                        IT tech projects done</h3>
+                    <!-- <button type="button" class="fw-bolder contact-btn  ">View
+                        All Services</button> -->
+                </div>
+            </div>
+            <div class="row mx-md-5">
+
+                <div class="col-md-4 d-flex justify-content-center my-3">
+                    <div class="item_img">
+                        <img src="Rectangle 25.png" alt width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex justify-content-center my-3">
+                    <div class="item_img">
+                        <img src="Rectangle 25.png" alt width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center my-3">
+                    <div class="item_img">
+                        <img src="Rectangle 25.png" alt width="100%">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-md-5 mt-3">
+                <div>
+                    <span class="text-primary fs-5 fw-bolder">About
+                        Company</span>
+                    <div class="d-flex mt-3 justify-content-between">
+                        <h3 class="fw-bolder display-5 text-dark">Websites that
+                            tell you brand’s story</h3>
+                        <!-- <button type="button" class="fw-bolder contact-btn  ">View
+                        All Services</button> -->
+                    </div>
+                </div>
+
+                <div class="row my-5 d-flex align-items-center">
+                    <div class="col-lg-5">
+                        <div class="content pe-md-5 position-relative">
+                            <img src="about-circle 1.png" alt width="100"
+                                height="100"
+                                class="position-absolute top-50 end-0 translate-middle-y">
+                            <img src="Rectangle 25.png" alt width="100%"
+                                class="rounded-5">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="content ps-md-5 pt-5">
+                            <p class="mb-3">Sed ut perspiciatis unde omnis iste
+                                natus error sit voluptatem accusantium , totam
+                                rem aperiam, eaque ipsa quae ab illo inventore
+                                et quasi architecto beatae vitae dicta sunt
+                                explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit.</p>
+                            <p class="mb-3">Sed ut perspiciatis unde omnis iste
+                                natus error sit voluptatem accusantium , totam
+                                rem aperiam, eaque ipsa quae ab illo inventore
+                                et quasi architecto beatae vitae dicta sunt
+                                explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit.</p>
+                            <p class="mb-3">Sed ut perspiciatis unde omnis iste
+                                natus error sit voluptatem accusantium , totam
+                                rem aperiam, eaque ipsa quae ab illo inventore
+                                et quasi architecto beatae vitae dicta sunt
+                                explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit.</p>
+                        </div>
+
+                        <div class="row ps-md-5 ">
+                            <div class="col-6 d-flex    align-items-center">
+                                <img src="teenyicons_tick-circle-solid.png" alt
+                                    width="15" height="15">
+                                <p class="text-primary mb-0 ps-2">Ease of
+                                    Scalability</p>
+                            </div>
+
+                            <div class="col-6 d-flex    align-items-center">
+                                <img src="teenyicons_tick-circle-solid.png" alt
+                                    width="15" height="15">
+                                <p class="text-primary mb-0 ps-2">Ease of
+                                    Scalability</p>
+                            </div>
+                        </div>
+
+                        <div class="row ps-md-5 mt-3">
+                            <div class="col-6 d-flex    align-items-center">
+                                <img src="teenyicons_tick-circle-solid.png" alt
+                                    width="15" height="15">
+                                <p class="text-primary mb-0 ps-2">Ease of
+                                    Scalability</p>
+                            </div>
+
+                            <div class="col-6 d-flex    align-items-center">
+                                <img src="teenyicons_tick-circle-solid.png" alt
+                                    width="15" height="15">
+                                <p class="text-primary mb-0 ps-2">Ease of
+                                    Scalability</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" testimonial position-relative">
+            <div class="container py-5 px-md-5 ">
+                <span class="text-primary fs-5 fw-bolder">Client
+                    Testimonials</span>
+                <div class="d-flex mt-3 justify-content-between">
+                    <h3 class="fw-bolder display-5 text-dark">Our customers love
+                        us.</h3>
+                    <!-- <button type="button" class="fw-bolder contact-btn  ">View
+                    All Services</button> -->
+                </div>
+
+              
+
+                    <div class="row slider  pt-md-5 pt-3">
+
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="items mx-2 bg-white rounded-4 p-4">
+                                <div class="  d-flex     ">
+
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                    <img src="ph_star-fill.png" alt
+                                        class="mx-1">
+                                </div>
+
+                                <div class="px-2  py-3">
+                                    <p>Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                        text ever since.</p>
+
+                                </div>
+
+                                <div class="d-flex  align-items-center">
+                                    <img src="Ellipse 2.png" alt>
+                                    <div class="text ps-5   ">
+                                        <p
+                                            class="text-dark fw-bolder mb-0">Alex</p>
+                                        <p>Delta Innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container py-5 px-md-5">
+
+                <div class="pb-md-5 pb-3">
+                    <h3 class="fw-bolder display-5 text-center text-dark">Our
+                        Team</h3>
+
+                </div>
+
+                <div class="row slider  ">
+                    <div class="col-md-4  ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2 bg-light p-3 rounded-3">
+
+                            <div class="d-flex  align-items-center">
+                                <img src="Rectangle 28.png" alt>
+                                <div class="text ps-5   ">
+                                    <p class="text-dark fw-bolder mb-0">Alex</p>
+                                    <p>Delta Innovation</p>
+                                </div>
+                            </div>
+
+                            <p class="pt-4">Proin arcu ligula, malesuada id
+                                tincidunt laoreet, facilisis at justo. Sed at
+                                lorem.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-md-5">
+                    <div class="col-md-4">
+                        <div class="item ms-md-5 text-center d-none d-md-block">
+                            <img src="FAQ.png" alt height="400"
+                                class="rotate-mobile">
+                        </div>
+                    </div>
+                    <div class="col-md-8 pt-md-0 pt-5">
+                        <div class="item">
+                            <div class="container mt-3">
+
+                                <div id="accordion">
+                                    <div class="card border-0 my-3">
+                                        <div
+                                            class="card-header bg-white d-flex justify-content-between">
+
+                                            <a
+                                                class="text-dark text-decoration-none fw-bolder"
+                                                data-bs-toggle="collapse"
+                                                href="#collapseOne">
+                                                1. Why we are best company ?
+                                            </a>
+                                            <a
+                                                class="text-dark text-decoration-none fw-bolder"
+                                                data-bs-toggle="collapse"
+                                                href="#collapseOne">
+                                                +
+                                            </a>
+
+                                        </div>
+                                        <div id="collapseOne"
+                                            class="collapse show"
+                                            data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-0 my-3">
+                                        <div class="card-header bg-white">
+                                            <a class="collapsed btn"
+                                                data-bs-toggle="collapse"
+                                                href="#collapseTwo">
+                                                Collapsible Group Item #2
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0 my-3">
+                                        <div class="card-header bg-white">
+                                            <a class="collapsed btn"
+                                                data-bs-toggle="collapse"
+                                                href="#collapseThree">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0 my-3">
+                                        <div class="card-header bg-white">
+                                            <a class="collapsed btn"
+                                                data-bs-toggle="collapse"
+                                                href="#collapsefour">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </div>
+                                        <div id="collapsefour" class="collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-4">
+                    <p class="text-primary text-center fs-5 fw-bolder">Our Blog</p>
+                    <h3 class="fw-bolder display-5 text-center text-dark">Our
+                        Recent News</h3>
+
+                </div>
+                <div class="row py-md-5">
+                    <div class="col-md-4 ">
+                        <div class="item mx-2  border my-3  rounded-4">
+                            <img src="Rectangle 33.png" alt width="100%">
+                            <div class="p-3">
+
+                                <span class="text-primary">September 14,
+                                    2023</span>
+                                <p class="pt-4">The Reasons Why We Love Web
+                                    Design Agency</p>
+
+                            </div>
+
+                            <hr class="mt-0 pb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2  border my-3  rounded-4">
+                            <img src="Rectangle 33.png" alt width="100%">
+                            <div class="p-3">
+
+                                <span class="text-primary">September 14,
+                                    2023</span>
+                                <p class="pt-4">The Reasons Why We Love Web
+                                    Design Agency</p>
+
+                            </div>
+
+                            <hr class="mt-0 pb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="item mx-2  border my-3  rounded-4">
+                            <img src="Rectangle 33.png" alt width="100%">
+                            <div class="p-3">
+
+                                <span class="text-primary">September 14,
+                                    2023</span>
+                                <p class="pt-4">The Reasons Why We Love Web
+                                    Design Agency</p>
+
+                            </div>
+
+                            <hr class="mt-0 pb-3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+
+            <footer class="bg-footer" style="background: #215BA8;">
+                <div class="container pt-5 pb-3">
+                    <div class="row py-5">
+                        <div class="col-md-3 ">
+                            <div class="item pb-3 ms-3">
+                                <img src="logo.png" alt>
+                                <p class="text-white pt-4 fw-bolder fs-5">The
+                                    Reasons Why We Love
+                                    Web Design Agency</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3  mt-md-0  mt-3">
+                            <div class="item ms-md-5 ps-md-5">
+                                <div class="pb-4 ps-3">
+                                    <span
+                                        class="text-white   fw-bolder fs-5">Pages</span>
+                                </div>
+
+                                <ul class="list-styled">
+                                    <li class="text-white ">Home</li>
+                                    <li class="text-white pt-3">About</li>
+                                    <li class="text-white pt-3">service</li>
+                                    <li class="text-white pt-3">Blog</li>
+                                    <li class="text-white pt-3">contact</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3  mt-md-0 mt-3">
+                            <div class="item ms-md-4  ">
+                                <div class="pb-4 ps-3">
+                                    <span
+                                        class="text-white fw-bolder fs-5">Services</span>
+                                </div>
+
+                                <ul class="list-styled">
+                                    <li class="text-white  ">Web
+                                        Development</li>
+                                    <li class="text-white pt-3">Web
+                                        Development</li>
+                                    <li class="text-white pt-3">Web
+                                        Development</li>
+                                    <li class="text-white pt-3">Web
+                                        Development</li>
+                                    <li class="text-white pt-3">Web
+                                        Development</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3  mt-md-0 mt-3">
+                            <div class="item ms-md-5 ms-3 ">
+                                <div class="pb-4  ">
+                                    <span
+                                        class="text-white  fw-bolder fs-5 ">Contact
+                                        Us</span>
+                                </div>
+
+                                <ul class="list-unstyled">
+                                    <li class="text-white d-flex ">
+                                        <div class><img src="mdi_location.png"
+                                                alt></div>
+
+                                        <div class="ps-3">
+                                            70 Washington square south, New york
+                                            ny 10012, United states
+                                        </div>
+                                    </li>
+                                    <li class="text-white d-flex pt-3">
+                                        <div>
+                                            <img src="email_3178158 1.png" alt>
+                                        </div>
+                                        <div class="ps-3">
+
+                                            demo148563@gmail.com
+                                        </div>
+                                    </li>
+
+                                    <li class="text-white d-flex pt-3">
+                                        <div>
+                                            <img src="viber_152851 1.png" alt>
+                                        </div>
+                                        <div class="ps-3">
+
+                                            +(251) 123 456 7890
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+            <div class="bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <p class="  my-3 px-2 text-white">Copyright ©
+                                2024 NodeSpace All rights reserved.</p>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-between">
+                            <p class="my-3 px-2 text-white">Privacy Policy</p>
+                            <p class="my-3 px-2 text-white">Terms Of Service</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // autoplay: true,
+                        autoplaySpeed: 2000,
+                        arrows: true,
+                        dots: true,
+                        // prevArrow: $('.slick-prev'),
+                        // nextArrow: $('.slick-next'),
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    arrows:false
+
+                                }
+                            }
+                        ]
+                    });
+                });
+            </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
