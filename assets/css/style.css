@@ -263,7 +263,17 @@
         line-height: 45px;
         text-align: center;
     }
-
+    .nav-link {
+        color: #37a5ff !important;
+        border-bottom: 1px solid #ffffff00;
+        width: 45px;
+    }
+    
+    .nav-link:hover {
+        color: #008fc7 !important;
+        border-bottom: 1px solid rgb(27, 190, 255);
+        width: 45px;
+    }
     .bus-para {
         font-size: 32px;
         font-weight: 700;
