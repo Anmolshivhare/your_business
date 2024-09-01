@@ -1,0 +1,329 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* navbar */
+
+/* Ensure the header is full-width and sticky */
+.navbar {
+    position: absolute;
+    border: none !important;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Carousel image full-width */
+.carousel-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* Adjust image to cover the entire section */
+}
+
+/* Sticky header with white background after scroll */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    /* Change background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for effect */
+
+}
+
+.navbar-brand img {
+    transition: width 0.3s ease-in-out;
+}
+
+.sticky-header .navbar-brand img {
+    width: 150px;
+    /* Reduce logo size when sticky */
+}
+
+.carousel-inner {
+    height: 100vh;
+    /* Ensure carousel covers full screen height */
+}
+
+.carousel-caption {
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* navbar */
+.contact-btn {
+    background-color: #42b3ffe8;
+    color: #fff;
+    border: 1px;
+    border-radius: 40px;
+    height: 40px;
+    width: 185px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #087debe8;
+    color: #fff;
+}
+
+.bg-img {
+    background-image: url('Group4.png');
+    /* height: 700px; */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.nav-link {
+    color: #fff !important;
+    border-bottom: 1px solid #ffffff00;
+}
+
+.nav-link:hover {
+    color: #06a0de !important;
+    border-bottom: 1px solid white;
+}
+
+.main-heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+}
+
+.bus-para {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+
+    text-align: center;
+}
+
+.ourservice {
+    background: #F7F8FD;
+}
+
+.testimonial {
+    background-color: #F7F8FD;
+}
+
+.banner_para {
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* slider  */
+
+.offcanvas-start {
+    background: #ffffff;
+}
+
+.slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #216efc;
+}
+
+.slick-next:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #216efc;
+}
+
+.slick-dots li button:before {
+    font-size: 13px;
+}
+
+.slick-dots {
+
+    bottom: -50px;
+
+}
+
+.sticky-header .nav-link {
+    color: #06a0de !important;
+    border-bottom: 1px solid white;
+    
+}
+.sticky-header .nav-link:hover {
+    color: #0174a1 !important;
+    border-bottom: 1px solid rgba(44, 117, 253, 0.877);
+}
+
+.nav-link {
+    color: #06a0de;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.slick-dots li button:before {
+    content: '-';
+    color: #0032ff;
+}
+
+.slick-dots li button:before {
+    font-size: 75px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #001277;
+}
+
+.item {
+    transition: background-color 0.5s ease;
+    /* Smooth transition for background color */
+}
+
+.item.active-slide {
+    background-color: rgb(46 121 255 / 83%) !important;
+    /* Change background color to blue */
+    color: white;
+    /* Optional: Change text color for better contrast */
+}
+
+
+
+
+.position-relative {
+    position: relative;
+}
+
+.item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 10%;
+    right: 0;
+    background-image: linear-gradient(to top, #0063e6cf 0%, rgb(0 59 255 / 0%) 100%);
+    ;
+    color: white;
+    padding: 10px;
+    margin: 0px 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.explore {
+    position: relative;
+    bottom: -76%;
+}
+
+.col-md-4:hover .item-content {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item-content img {
+    max-width: 30px;
+    /* Adjust the arrow size as needed */
+}
+
+.item-text {
+    flex-grow: 1;
+}
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .rotate-mobile {
+        transform: rotate(90deg);
+    }
+
+    .item-content {
+        margin: 0px 12px;
+
+    }
+
+    .main-heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .bus-para {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+
+    .banner_para {
+        /* padding: 4px 20px; */
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* .contact-btn{
+    margin: 0px 5px;
+  } */
+    .display-5 {
+        font-size: 24px;
+    }
+
+
+    .carousel-item {
+        height: 100vh;
+        /* Full height for the carousel item */
+    }
+
+    .carousel-image {
+        height: 100%;
+        /* Image takes up full height of the container */
+        object-fit: cover;
+        /* Ensures the image covers the entire container */
+        object-position: center;
+        /* Centers the image */
+    }
+
+    /* nav */
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+        background: #ffffff;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+}

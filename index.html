@@ -13,262 +13,16 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+            <link rel="stylesheet" href="assets/css/style.css">
     </head>
-
-    <style>
-        *{
-            padding: 0%;
-            margin: 0%;
-        }
-
-
-        /* navbar */
-
-            /* Ensure the header is full-width and sticky */
-            .navbar {
-                position: absolute;
-                width: 100%;
-                z-index: 1000;
-                transition: background-color 0.3s ease-in-out;
-            }
-
-            /* Carousel image full-width */
-            .carousel-image {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover; /* Adjust image to cover the entire section */
-            }
-
-            /* Sticky header with white background after scroll */
-            .sticky-header {
-                position: fixed;
-                top: 0;
-                background-color: white; /* Change background color */
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
-            }
-
-            .navbar-brand img {
-                transition: width 0.3s ease-in-out;
-            }
-
-            .sticky-header .navbar-brand img {
-                width: 150px; /* Reduce logo size when sticky */
-            }
-
-            .carousel-inner {
-                height: 100vh; /* Ensure carousel covers full screen height */
-            }
-
-            .carousel-caption {
-                top: 25%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-
-        /* navbar */
-                .contact-btn {
-            background-color: #42b3ffe8;
-            color: #fff;
-            border: 1px;
-            border-radius: 40px;
-            height: 40px;
-            width: 185px;
-            transition: background-color 0.5s ease, color 0.3s ease;
-        }
-
-        .contact-btn:hover {
-            background-color: #087debe8;
-            color: #fff;
-        }
-
-        .bg-img{
-            background-image: url('Group4.png');
-          /* height: 700px; */
-             width: 100%;
-            background-size: cover;  
-            background-position: center; 
-            background-repeat: no-repeat; 
-        
-        }
-        .nav-link{
-            color: #fff;
-        }
-        .main-heading{
-            font-size: 70px;
-            font-weight: 700;
-            color: #fff;
-            line-height: 70px;
-            text-align: center;
-        }
-        .bus-para{
-            font-size: 70px;
-            font-weight: 700;
-            color: #fff;
-            
-            text-align: center;
-        }
-          .ourservice{
-            background: #F7F8FD;
-          }
-          .testimonial{
-            background-color: #F7F8FD;
-          }
-          .banner_para{
-            margin: 0 auto;
-            width: 60%;
-          }
-          
-            /* slider  */
-           
-            .offcanvas-start{
-                background: #ffffff;
-            }
-
-                        .slick-prev:before {
-                font-family: slick;
-                font-size: 30px;
-                line-height: 1;
-                opacity: .75;
-                color: #216efc;
-                        }
-                        .slick-next:before {
-                font-family: slick;
-                font-size: 30px;
-                line-height: 1;
-                opacity: .75;
-                color: #216efc;
-                        }
-                        .slick-dots li button:before {
-                font-size: 13px;
-            }
-                .slick-dots {
-                    
-                    bottom: -50px;
-                    
-                }
-                .nav-link{
-                    color: #06a0de;
-                    font-weight:500;
-                    font-size: 16px;
-                    transition: color 0.3s ease, border-bottom-color 0.3s ease;
-                }
-                .slick-dots li button:before{
-                    content: '-';
-                    color: #0032ff;
-                }
-                    
-                        .slick-dots li button:before {
-                        font-size: 75px;
-                    }
-                            .slick-dots li.slick-active button:before {
-                            opacity: .75;
-                            color: #001277;
-                        }
-
-                                        .item {
-                    transition: background-color 0.5s ease; /* Smooth transition for background color */
-                }
-
-                .item.active-slide {
-                    background-color: rgb(46 121 255 / 83%) !important; /* Change background color to blue */
-                    color: white; /* Optional: Change text color for better contrast */
-                }          
-
-
-
-
-
-
-
-
-            @media (max-width: 767.98px) {
-        .rotate-mobile {
-            transform: rotate(90deg);
-        }
-
-        .main-heading{
-            font-size: 32px;
-            font-weight: 700;
-            color: #fff;
-            line-height: 45px;
-            text-align: center;
-        }
-                .bus-para {
-            font-size: 32px;
-            font-weight: 700;
-            color: #fff;
-            text-align: center;
-        }
-        .banner_para{
-            /* padding: 4px 20px; */
-            width: 100%;
-            text-align: justify;
-          }
-          /* .contact-btn{
-            margin: 0px 5px;
-          } */
-          .display-5{
-            font-size: 24px;
-          }
-
-
-          .carousel-item {
-        height: 100vh; /* Full height for the carousel item */
-    }
-
-    .carousel-image {
-        height: 100%; /* Image takes up full height of the container */
-        object-fit: cover; /* Ensures the image covers the entire container */
-        object-position: center; /* Centers the image */
-    }
-
-    /* nav */
-    .navbar-collapse {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 75%;
-        height: 100%;
-        background: #ffffff;
-    }
-
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 300ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
-
-    }
-
-
-    
-
-    
-    </style>
+      
     <body>
 
         <section>
             <nav class="navbar navbar-expand-lg pt-3  ">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="./logo.png" alt width="170px">
+                        <img src="./assets/image/logo.png" alt width="170px">
                     </a>
                     <button class="navbar-toggler bg-white" type="button"
                         data-bs-toggle="offcanvas"
@@ -285,7 +39,7 @@
                             class="offcanvas-header d-flex justify-content-between align-items-baseline d-block d-md-none">
                             <a class="navbar-brand d-block d-md-none  "
                                 href="#">
-                                <img src="./logo.png" alt width="150px">
+                                <img src="./assets/image/logo.png" alt width="150px">
                             </a>
                             <button type="button"
                                 class="btn-close text-white text-reset"
@@ -329,7 +83,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./Group4.png"
+                        <img src="./assets/image/Group4.png"
                             class="d-block w-100 carousel-image"
                             alt="...">
                         <div
@@ -352,7 +106,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./Group4.png"
+                        <img src="./assets/image/Group4.png"
                             class="d-block w-100 carousel-image"
                             alt="...">
                         <div class="carousel-caption d-non d-md-block">
@@ -362,7 +116,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./Group4.png"
+                        <img src="./assets/image/Group4.png"
                             class="d-block w-100 carousel-image"
                             alt="...">
                         <div class="carousel-caption d-non d-md-block">
@@ -410,7 +164,7 @@
                                 class="  d-flex justify-content-between   ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -418,7 +172,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -430,7 +184,7 @@
                                 class="  d-flex justify-content-between   ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -438,7 +192,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -450,7 +204,7 @@
                                 class="  d-flex justify-content-between   ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -458,7 +212,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -474,7 +228,7 @@
                                 class="  d-flex justify-content-between   ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -482,7 +236,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -494,7 +248,7 @@
                                 class="  d-flex justify-content-between   ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -502,7 +256,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -514,7 +268,7 @@
                                 class="  d-flex justify-content-between ">
                                 <p class="fs-4 fw-bolder">Web
                                     <br>Development</p>
-                                <img src="Group 7.png" alt width="60"
+                                <img src="assets/image/Group 7.png" alt width="60"
                                     height="60">
                             </div>
                             <hr class="m-0">
@@ -522,7 +276,7 @@
                             <div class="px-2  py-3">
                                 <p>totam rem aperiam, eaque ipsa quae ab illo
                                     inventore et quasi architecto beatae.</p>
-                                <img src="Rectangle 11.png" alt
+                                <img src="assets/image/Rectangle 11.png" alt
                                     class="rounded-4"
                                     width="100%">
                             </div>
@@ -536,30 +290,30 @@
         </section>
 
         <section class="container   px-md-5 ">
-            <div class="row pt-5 mb-5">
+            <div class="row pt-5 mb-5 slider-no-dots-no-arrow">
                 <div class="col-md-2 col-6 mx-md-3 text-center">
                     <div class="items m-3 ">
-                        <img src="08.png" alt width="150" height="50">
+                        <img src="assets/image/08.png" alt width="150" height="50">
                     </div>
                 </div>
                 <div class="col-md-2 col-6 mx-md-3 text-center">
                     <div class="items m-3 ">
-                        <img src="08.png" alt width="150" height="50">
+                        <img src="assets/image/08.png" alt width="150" height="50">
                     </div>
                 </div>
                 <div class="col-md-2 col-6 mx-md-3 text-center">
                     <div class="items  m-3">
-                        <img src="08.png" alt width="150" height="50">
+                        <img src="assets/image/08.png" alt width="150" height="50">
                     </div>
                 </div>
                 <div class="col-md-2 col-6 mx-md-3 text-center">
                     <div class="items m-3 ">
-                        <img src="08.png" alt width="150" height="50">
+                        <img src="assets/image/08.png" alt width="150" height="50">
                     </div>
                 </div>
                 <div class="col-md-2 col-6 mx-md-3 text-center">
                     <div class="items m-3 ">
-                        <img src="08.png" alt width="150" height="50">
+                        <img src="assets/image/08.png" alt width="150" height="50">
                     </div>
                 </div>
 
@@ -575,23 +329,59 @@
                         All Services</button> -->
                 </div>
             </div>
+
             <div class="row mx-md-5">
 
-                <div class="col-md-4 d-flex justify-content-center my-3">
+                <div class="col-md-4 d-flex justify-content-center my-3 position-relative">
                     <div class="item_img">
-                        <img src="Rectangle 25.png" alt width="100%">
+                        <img src="assets/image/Rectangle 25.png" alt style="width: 100%;">
+                    </div>
+                    <div
+                        class="item-content ">
+                        <div class="item d-flex justify-content-between align-items-start explore">
+                            <div class="item-text">
+                                <p class="mb-0 fw-bolder">Project for
+                                    Marketing</p>
+                                <p>Marketing</p>
+                            </div>
+                            <img src="assets/image/maki_arrow.png" alt>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4  d-flex justify-content-center my-3">
+                <div class="col-md-4 d-flex justify-content-center my-3 position-relative">
                     <div class="item_img">
-                        <img src="Rectangle 25.png" alt width="100%">
+                        <img src="assets/image/Rectangle 25.png" alt style="width: 100%;">
+                    </div>
+                    <div
+                        class="item-content ">
+                        <div class="item d-flex justify-content-between align-items-start explore">
+                            <div class="item-text">
+                                <p class="mb-0 fw-bolder">Project for
+                                    Marketing</p>
+                                <p>Marketing</p>
+                            </div>
+                            <img src="assets/image/maki_arrow.png" alt>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center my-3">
+                <div class="col-md-4 d-flex justify-content-center my-3 position-relative">
                     <div class="item_img">
-                        <img src="Rectangle 25.png" alt width="100%">
+                        <img src="assets/image/Rectangle 25.png" alt style="width: 100%;">
+                    </div>
+                    <div
+                        class="item-content ">
+                        <div class="item d-flex justify-content-between align-items-start explore">
+                            <div class="item-text">
+                                <p class="mb-0 fw-bolder">Project for
+                                    Marketing</p>
+                                <p>Marketing</p>
+                            </div>
+                            <img src="assets/image/maki_arrow.png" alt>
+                        </div>
                     </div>
                 </div>
+
+                 
 
             </div>
 
@@ -610,10 +400,10 @@
                 <div class="row my-5 d-flex align-items-center">
                     <div class="col-lg-5">
                         <div class="content pe-md-5 position-relative">
-                            <img src="about-circle 1.png" alt width="100"
+                            <img src="assets/image/about-circle 1.png" alt width="100"
                                 height="100"
                                 class="position-absolute top-50 end-0 translate-middle-y">
-                            <img src="Rectangle 25.png" alt width="100%"
+                            <img src="assets/image/Rectangle 25.png" alt width="100%"
                                 class="rounded-5">
 
                         </div>
@@ -642,14 +432,14 @@
 
                         <div class="row ps-md-5 ">
                             <div class="col-6 d-flex    align-items-center">
-                                <img src="teenyicons_tick-circle-solid.png" alt
+                                <img src="assets/image/teenyicons_tick-circle-solid.png" alt
                                     width="15" height="15">
                                 <p class="text-primary mb-0 ps-2">Ease of
                                     Scalability</p>
                             </div>
 
                             <div class="col-6 d-flex    align-items-center">
-                                <img src="teenyicons_tick-circle-solid.png" alt
+                                <img src="assets/image/teenyicons_tick-circle-solid.png" alt
                                     width="15" height="15">
                                 <p class="text-primary mb-0 ps-2">Ease of
                                     Scalability</p>
@@ -658,14 +448,14 @@
 
                         <div class="row ps-md-5 mt-3">
                             <div class="col-6 d-flex    align-items-center">
-                                <img src="teenyicons_tick-circle-solid.png" alt
+                                <img src="assets/image/teenyicons_tick-circle-solid.png" alt
                                     width="15" height="15">
                                 <p class="text-primary mb-0 ps-2">Ease of
                                     Scalability</p>
                             </div>
 
                             <div class="col-6 d-flex    align-items-center">
-                                <img src="teenyicons_tick-circle-solid.png" alt
+                                <img src="assets/image/teenyicons_tick-circle-solid.png" alt
                                     width="15" height="15">
                                 <p class="text-primary mb-0 ps-2">Ease of
                                     Scalability</p>
@@ -696,15 +486,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -718,7 +508,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -731,15 +521,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -753,7 +543,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -766,15 +556,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -788,7 +578,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -801,15 +591,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -823,7 +613,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -836,15 +626,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -858,7 +648,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -871,15 +661,15 @@
                         <div class="items mx-2 bg-white rounded-4 p-4">
                             <div class="  d-flex     ">
 
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
-                                <img src="ph_star-fill.png" alt
+                                <img src="assets/image/ph_star-fill.png" alt
                                     class="mx-1">
                             </div>
 
@@ -893,7 +683,7 @@
                             </div>
 
                             <div class="d-flex  align-items-center">
-                                <img src="Ellipse 2.png" alt>
+                                <img src="assets/image/Ellipse 2.png" alt>
                                 <div class="text ps-5   ">
                                     <p
                                         class="text-dark fw-bolder mb-0">Alex</p>
@@ -902,6 +692,7 @@
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
 
@@ -923,7 +714,7 @@
                         <div class="item mx-2 bg-light p-3 rounded-3">
 
                             <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
+                                <img src="assets/image/Rectangle 28.png" alt>
                                 <div class="text ps-5   ">
                                     <p class="text-dark fw-bolder mb-0">Alex</p>
                                     <p>Delta Innovation</p>
@@ -936,11 +727,11 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4  ">
                         <div class="item mx-2 bg-light p-3 rounded-3">
 
                             <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
+                                <img src="assets/image/Rectangle 28.png" alt>
                                 <div class="text ps-5   ">
                                     <p class="text-dark fw-bolder mb-0">Alex</p>
                                     <p>Delta Innovation</p>
@@ -953,11 +744,11 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4  ">
                         <div class="item mx-2 bg-light p-3 rounded-3">
 
                             <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
+                                <img src="assets/image/Rectangle 28.png" alt>
                                 <div class="text ps-5   ">
                                     <p class="text-dark fw-bolder mb-0">Alex</p>
                                     <p>Delta Innovation</p>
@@ -970,11 +761,11 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4  ">
                         <div class="item mx-2 bg-light p-3 rounded-3">
 
                             <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
+                                <img src="assets/image/Rectangle 28.png" alt>
                                 <div class="text ps-5   ">
                                     <p class="text-dark fw-bolder mb-0">Alex</p>
                                     <p>Delta Innovation</p>
@@ -987,11 +778,11 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4  ">
                         <div class="item mx-2 bg-light p-3 rounded-3">
 
                             <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
+                                <img src="assets/image/Rectangle 28.png" alt>
                                 <div class="text ps-5   ">
                                     <p class="text-dark fw-bolder mb-0">Alex</p>
                                     <p>Delta Innovation</p>
@@ -1004,29 +795,13 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="item mx-2 bg-light p-3 rounded-3">
-
-                            <div class="d-flex  align-items-center">
-                                <img src="Rectangle 28.png" alt>
-                                <div class="text ps-5   ">
-                                    <p class="text-dark fw-bolder mb-0">Alex</p>
-                                    <p>Delta Innovation</p>
-                                </div>
-                            </div>
-
-                            <p class="pt-4">Proin arcu ligula, malesuada id
-                                tincidunt laoreet, facilisis at justo. Sed at
-                                lorem.</p>
-
-                        </div>
-                    </div>
+                     
                 </div>
 
                 <div class="row py-md-5">
                     <div class="col-md-4">
                         <div class="item ms-md-5 text-center d-none d-md-block">
-                            <img src="FAQ.png" alt height="400"
+                            <img src="assets/image/FAQ.png" alt height="400"
                                 class="rotate-mobile">
                         </div>
                     </div>
@@ -1151,7 +926,7 @@
                 <div class="row py-md-5">
                     <div class="col-md-4 ">
                         <div class="item mx-2  border my-3  rounded-4">
-                            <img src="Rectangle 33.png" alt width="100%">
+                            <img src="assets/image/Rectangle 33.png" alt width="100%">
                             <div class="p-3">
 
                                 <span class="text-primary">September 14,
@@ -1166,7 +941,7 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="item mx-2  border my-3  rounded-4">
-                            <img src="Rectangle 33.png" alt width="100%">
+                            <img src="assets/image/Rectangle 33.png" alt width="100%">
                             <div class="p-3">
 
                                 <span class="text-primary">September 14,
@@ -1181,7 +956,7 @@
                     </div>
                     <div class="col-md-4 ">
                         <div class="item mx-2  border my-3  rounded-4">
-                            <img src="Rectangle 33.png" alt width="100%">
+                            <img src="assets/image/Rectangle 33.png" alt width="100%">
                             <div class="p-3">
 
                                 <span class="text-primary">September 14,
@@ -1205,7 +980,7 @@
                     <div class="row py-5">
                         <div class="col-md-3 ">
                             <div class="item pb-3 ms-3">
-                                <img src="logo1.png" alt>
+                                <img src="assets/image/logo1.png" alt>
                                 <p class="text-white pt-4 fw-bolder fs-5">The
                                     Reasons Why We Love
                                     Web Design Agency</p>
@@ -1263,7 +1038,7 @@
 
                                 <ul class="list-unstyled">
                                     <li class="text-white d-flex ">
-                                        <div class><img src="mdi_location.png"
+                                        <div class><img src="assets/image/mdi_location.png"
                                                 alt></div>
 
                                         <div class="ps-3">
@@ -1273,7 +1048,7 @@
                                     </li>
                                     <li class="text-white d-flex pt-3">
                                         <div>
-                                            <img src="email_3178158 1.png" alt>
+                                            <img src="assets/image/email_3178158 1.png" alt>
                                         </div>
                                         <div class="ps-3">
 
@@ -1283,7 +1058,7 @@
 
                                     <li class="text-white d-flex pt-3">
                                         <div>
-                                            <img src="viber_152851 1.png" alt>
+                                            <img src="assets/image/viber_152851 1.png" alt>
                                         </div>
                                         <div class="ps-3">
 
@@ -1322,86 +1097,7 @@
         <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-        <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.slider').slick({
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 2000,
-                        arrows: true,
-                        dots: true,
-                      
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 2
-                                }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    slidesToShow: 1,
-                                    arrows:false
-
-                                }
-                            }
-                        ]
-                    });
-
-                                    $('.slider-no-dots').slick({
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 2000,
-                        arrows: true,
-                        dots: false,  // Dots disabled
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 2
-                                }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    slidesToShow: 1,
-                                    arrows: false
-                                }
-                            }
-                        ]
-                    });
- 
-                     $('.slider-no-dots').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-                    $('.item').removeClass('active-slide'); // Remove class from all slides
-                    $(slick.$slides[nextSlide]).find('.item').addClass('active-slide'); // Add class to the next active slide
-                });
-
-                // Initialize with the first slide as active
-                $('.slider-no-dots .slick-active .item').addClass('active-slide');
- 
-                });
-
-
-                            $(document).ready(function() {
-                // On scroll, add/remove sticky class
-                $(window).on('scroll', function() {
-                    if ($(window).scrollTop() > 50) {
-                        $('.navbar').addClass('sticky-header');
-                    } else {
-                        $('.navbar').removeClass('sticky-header');
-                    }
-                });
-            });
-
-
-
-
-
-
-            </script>
+        <script type="text/javascript" src="assets/js/style.js"></script>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
